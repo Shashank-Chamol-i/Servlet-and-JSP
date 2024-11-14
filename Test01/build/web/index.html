@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
+        <title>Form Page</title>
+        <style>
+            .container{
+                width:35%;
+                border: 1px solid black;
+                margin:auto;
+                padding:20px;
+                font-size:24px;
+            }
+            #101 table tr td input{
+                font-size:24px;
+            }
+        </style>
+          
+            
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class = "container">
+            
+            <form id="101" action ="Program02" method = "post">
+                <h2>Registration Form </h2>
+                <table>
+                    <tr>
+                        <td>Enter Name :</td>
+                        <td><input type = "text" name = "user_name" placeholder = "Enter here"></td>
+                    </tr>
+                    <tr>
+                        <td> Enter Password :</td>
+                        <td><input type = "password" name = "user_password" placeholder = "Enter here"></td>
+                    </tr>
+                    <tr>
+                        <td>Enter E-mail :</td>
+                        <td><input type = "email" name = "user_email" placeholder="Enter here"></td>
+                    </tr>
+                    <tr>
+                        <td>Enter Gender :</td>
+                        <td><input type="radio" name="user_gender" value="male">Male &nbsp; &nbsp; <input type="radio" name="user_gender" value="female">Female</td>
+                    </tr>
+                    <tr>
+                        <td>Select Course :</td>
+                                <td><select name="user_course">
+                                        <option value="Java">Java</option>
+                                        <option value="Python">Python</option>
+                                        <option value="Go">Go</option>
+                                        <option value="Javascript">JavaScript</option>
+                            </select></td>
+                    </tr>
+                    <tr style="text-align: right;">
+                        <td><input type="checkbox" name="condition" value="checked"></td>
+                        <td>Agree terms and Conditions :</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                           <input type="submit">
+                           <input type="reset">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
